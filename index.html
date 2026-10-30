@@ -43,10 +43,23 @@
   font-size: 24px;
   font-weight: bold;
 }
+
+#link-cadeado {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    z-index: 10; 
+}
+
+.cadeado {
+    width: 30px;  
+    height: auto;
+}
+
     </style>
 
 
-<!-- Tem muito o que procurar aqui, hehe. Mas eu deixei escondidinho!. SSTV -->
+
 
 
 </head>
@@ -56,6 +69,8 @@
     <video autoplay muted loop class="video-fundo">
   <source src="gatorodrigo.mov" type="video/mp4">
 </video>
+
+
 
     <div id="countdown" class="timer-container">
   <div class="time-box">
@@ -76,6 +91,9 @@
   </div>
 </div>
 
+<a href="senha.html" id="link-cadeado">
+    <img src="cadeado.png" alt="Cadeado" class="cadeado">
+</a>
 
 </body>
 </html>
