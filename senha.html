@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<meta charset="UTF-8">
+<title>Texto Personalizado</title>
+<style>
+  .meutexto {
+ color: rgb(44, 44, 44);   /* Cor do texto */
+    font-size: 24px;           /* Tamanho da fonte */
+    font-family: Arial;        /* Tipo da letra */
+    text-align: center;        /* Centraliza o texto */
+    margin-top: 100px;         /* Espaço do topo */
+  }
+</style>
+</head>
+<body>
+<p class="meutexto">Absolute: ???????</p>
+</body>
+</html>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Palavra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(44, 44, 44);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 80%;
+            text-align: center;
+        }
+        button {
+            background-color: #237a00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Digite a palavra correta para continuar:</h2>
+        <input type="text" id="wordInput" placeholder="Digite a palavra...">
+        <button onclick="checkWord()">Verificar</button>
+    </div>
+<script>
+  function checkWord() {
+    const wordLinks = {
+      "umerro": "https://youtu.be/lCf9h_5hEvs", 
+    }
+
+    const userWord = document.getElementById("wordInput").value.trim().toLowerCase();
+
+    if (wordLinks[userWord]) {
+      window.location.href = wordLinks[userWord]; // Vai para o link correspondente
+    } else {
+      alert("Palavra incorreta. Tente novamente!");
+    }
+  }
+</script>
+
+</body>
+</html>
