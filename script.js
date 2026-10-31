@@ -17,6 +17,6 @@ const atualizarContador = setInterval(function() {
 
   if (diferenca < 0) {
     clearInterval(atualizarContador);
-    document.getElementById("countdown").innerHTML = "<h2>Chega de esperar, a hora chegou! https://www.youtube.com/watch?v=nSPuSsD_H7w </h2>";
+    document.getElementById("countdown").innerHTML = "<h2>Chega de esperar, a hora chegou! https://youtu.be/QmOFP9zrFY0 </h2>";
   }
 }, 1000);
